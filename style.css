@@ -1,0 +1,60 @@
+/*mobile first*/
+body {
+  background-color: lightblue;
+  color: white;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+}
+
+.caja {
+  background-color: rgba(62, 21, 222, 0.3);
+  padding: 20px;
+  border-radius: 10px;
+  display: block; 
+  margin: 20px auto;
+  max-width: 300px;
+}
+
+/* Breakpoint 1: tablets */
+@media (min-width: 768px) {
+  body {
+    background-color: lightgreen;
+  }
+
+  .caja {
+    display: flex;           /* Cambia a flexbox */
+    justify-content: center;  /* Centra horizontalmente */
+    max-width: 500px;
+  }
+}
+
+/* Breakpoint 2: laptops */
+@media (min-width: 992px) {
+  body {
+    background-color: lightcoral;
+  }
+
+  .caja {
+    flex-direction: row;     /* Elementos dentro de la caja en fila */
+    max-width: 700px;
+  }
+}
+
+/* Breakpoint 3: desktops grandes */
+@media (min-width: 1200px) {
+  body {
+    background-color: lightgoldenrodyellow;
+    color: black;
+  }
+
+  .caja {
+    flex-direction: row;     
+    max-width: 900px;
+    padding: 40px;
+  }
+}
+
+
+  
