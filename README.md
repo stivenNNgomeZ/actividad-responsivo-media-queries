@@ -1,0 +1,1 @@
+aca use la implementacion de medidas, que estas se usan por un comando de @media() y dentro su usan las medidas dependiendo si es para celular usar min a max, si es de desktop mix a min, y esto mas que todo nos sirve para que tanto los desktop y mobiles tengan comodidad 
