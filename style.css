@@ -19,7 +19,7 @@ body {
 
 /* Breakpoint 1: tablets */
 @media (min-width: 768px) {
-  body {
+  body { color: black;
     background-color: lightgreen;
   }
 
@@ -55,6 +55,113 @@ body {
     padding: 40px;
   }
 }
+
+.contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 16px;
+}
+
+.tarjeta { color: black;
+  width: 100%;                 /* Celular */
+  background-color: #f2f2f2;
+  padding: 16px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  box-sizing: border-box;
+}
+
+@media (min-width: 768px) {
+  .tarjeta {
+    width: 30%;                /* PC */
+  }
+}
+
+.tarjeta h3 { color: black;
+  margin-top: 0;
+}
+
+.tarjeta button {
+  background-color: #ff9800;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.tarjeta button:hover {
+  background-color: #e68900;
+}
+/*formulario*/
+.formulario-contenedor {
+  max-width: 600px;
+  margin: 40px auto; /* Centrado con margen superior */
+  padding: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+  background-color: #f9f9f9;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 24px;
+  font-family: Arial, sans-serif;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+label {
+  width: 100%;
+  font-weight: bold;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Media query para pantallas grandes */
+@media (min-width: 600px) {
+  input, textarea {
+    width: 48%; /* Dos columnas */
+  }
+
+  textarea, button {
+    width: 100%; /* Ocupan toda la fila */
+  }
+}
+
+
 
 
   

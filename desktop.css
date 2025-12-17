@@ -59,4 +59,15 @@ body {
   }
 }
 
+.galeria-goku {
+  display: flex;
+  flex-wrap: wrap;      
+  gap: 10px;
+}
 
+.galeria-goku img { margin: 0 auto;
+  background-color: grey;
+  width: 200px;         
+  max-width: 200%;
+  height: auto;
+}
